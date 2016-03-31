@@ -33,7 +33,7 @@ $('.element-with-class').areYouSure();
 ### Custom warning:
 ```javascript
 $('form').areYouSure({
-    warningText: 'Custom warning message'
+    warningText: 'You have made unsaved changes. Are you sure you want to leave?'
 });
 ```
 
