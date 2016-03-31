@@ -12,7 +12,9 @@ Download and estract the files to your project, and include:
 ```
 
 ### Bower
-Not supported at this moment
+```bash
+$ bower install jquery.areYouSure --save
+```
 
 ## Usage
 
