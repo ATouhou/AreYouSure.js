@@ -7,8 +7,8 @@ jQuery plugin to check for unsaved changes before leaving a page.
 Download and estract the files to your project, and include:
 
 ```html
-<script type="text/javascript" src="path/jquery.js"></script>
-<script type="text/javascript" src="path/jquery.areYouSure.js"></script>
+<script type="text/javascript" src="path/jquery.min.js"></script>
+<script type="text/javascript" src="path/jquery.areYouSure.min.js"></script>
 ```
 
 ### Bower
