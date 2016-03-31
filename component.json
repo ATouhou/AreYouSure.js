@@ -1,0 +1,14 @@
+{
+  "name": "jquery.areYouSure",
+  "repo": "nikolajlovenhardt/jquery-areYouSure",
+  "description": "jQuery plugin to check for unsaved changes before leaving a page",
+  "version": "1.0.0",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "jquery.areYouSure.js",
+  "scripts": [
+    "jquery.areYouSure.js"
+  ]
+}
