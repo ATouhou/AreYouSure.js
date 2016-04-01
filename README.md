@@ -18,8 +18,10 @@ $ bower install jquery.areYouSure --save
 
 ## Methods
 
-`reload` - Method to reinitialise the script, and refresh the pre-stored data.
-`remove` - Unbind/remove listener from element(s)
+Method | Description
+--- | ---
+`reload` | Method to reinitialise the script, and refresh the pre-stored data.
+`remove` | Unbind/remove listener from element(s)
 
 ## Usage
 
