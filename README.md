@@ -47,6 +47,7 @@ $('form').areYouSure({
 ### Reload pre-stored data
 ```javascript
 $('form').areYouSure('reload');
+```
 
 ### Remove listener(s)
 ```javascript
