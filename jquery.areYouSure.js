@@ -1,5 +1,5 @@
 /*!
- * jQuery AreYouSure 1.0.0
+ * jQuery AreYouSure 1.0.1
  *
  * Copyright 2016 Nikolaj Løvenhardt Petersen
  * Released under the MIT license
@@ -17,19 +17,28 @@
     }
 }(function ($) {
     $.fn.areYouSure = function (fn) {
-        // Remove listener
-        if (fn == 'remove') {
-            areYouSure.elements = $.grep(areYouSure.elements, function (element) {
-                return (element != this);
-            });
+        switch (fn) {
+            // Reload
+            case 'reload':
+                areYouSure.reload();
+                break;
 
-            return;
+            // Remove element
+            case 'remove':
+                areYouSure.elements = $.grep(areYouSure.elements, function (element) {
+                    return (element != this);
+                });
+
+                return;
+                break;
+
+            // Add listener
+            default:
+                // Add listener
+                var opts = $.extend({}, $.fn.areYouSure.defaults, fn);
+                return areYouSure.bindListener(this, opts);
+                break;
         }
-
-        // Add listener
-        var opts = $.extend({}, $.fn.areYouSure.defaults, fn);
-
-        return areYouSure.bindListener(this, opts);
     };
 
     // Plugin defaults
@@ -86,6 +95,16 @@
 
                 return e.getMessage();
             }
+        },
+
+        /**
+         * Reload data for elements
+         * @return {boolean}
+         */
+        reload: function () {
+            console.log(areYouSure.elements);
+            areYouSure.setData($(areYouSure.elements));
+            return true;
         },
 
         /**

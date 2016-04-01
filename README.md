@@ -16,9 +16,14 @@ Download and estract the files to your project, and include:
 $ bower install jquery.areYouSure --save
 ```
 
+## Methods
+
+`reload` - Method to reinitialise the script, and refresh the pre-stored data.
+`remove` - Unbind/remove listener from element(s)
+
 ## Usage
 
-### How to bind
+### How to bind listener(s)
 ```javascript
 // Bind to all form elements
 $('form').areYouSure();
@@ -36,6 +41,14 @@ $('form').areYouSure({
     warningText: 'You have made unsaved changes. Are you sure you want to leave?'
 });
 ```
+
+### Reload pre-stored data
+```javascript
+$('form').areYouSure('reload');
+
+### Remove listener(s)
+```javascript
+$('form').areYouSure('remove');
 
 ## Authors
 [Nikolaj Løvenhardt](http://github.com/nikolajlovenhardt)
