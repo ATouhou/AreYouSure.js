@@ -102,7 +102,6 @@
          * @return {boolean}
          */
         reload: function () {
-            console.log(areYouSure.elements);
             areYouSure.setData($(areYouSure.elements));
             return true;
         },
