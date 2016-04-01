@@ -51,6 +51,7 @@ $('form').areYouSure('reload');
 ### Remove listener(s)
 ```javascript
 $('form').areYouSure('remove');
+```
 
 ## Authors
 [Nikolaj Løvenhardt](http://github.com/nikolajlovenhardt)
